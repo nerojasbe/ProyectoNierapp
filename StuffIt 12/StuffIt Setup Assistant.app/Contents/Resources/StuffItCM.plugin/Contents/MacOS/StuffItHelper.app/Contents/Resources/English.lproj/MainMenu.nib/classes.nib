@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showProgressWindow = id; }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {taskMaster = id; taskWindowController = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

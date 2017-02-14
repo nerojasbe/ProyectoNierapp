@@ -1,0 +1,33 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = ImageTextCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {CLASS = NSDatePicker; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {
+                OK = id; 
+                addNewPredicate = id; 
+                addNewScope = id; 
+                cancel = id; 
+                removePredicate = id; 
+                removeScope = id; 
+                segmentChange = id; 
+            }; 
+            CLASS = PredicateEditorController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                nameField = NSTextField; 
+                predicateTable = NSTableView; 
+                predicateView = NSView; 
+                scopeControl = NSSegmentedControl; 
+                scopeTable = NSTableView; 
+                scopeView = NSView; 
+                scopesController = NSArrayController; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

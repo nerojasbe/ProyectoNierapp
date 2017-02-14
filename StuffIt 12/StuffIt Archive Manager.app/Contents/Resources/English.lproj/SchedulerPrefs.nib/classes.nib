@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {selectTempFolder = id; }; 
+            CLASS = SchedulerPrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsView = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>StuffIt Deluxe</string>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<false/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>StuffIt</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>defaultLocation</key>
+		<string>~/Desktop</string>
+		<key>defaultName</key>
+		<string>archive</string>
+		<key>encryptWithPassword</key>
+		<false/>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDRelatedActions</key>
+		<string>(* AMDRelatedActions bundle ids go here. (optional) *)</string>
+		<key>AMDRequires</key>
+		<string>(* AMDRequires text to explain anything outside of Automator required for the action's operation, e.g. a web page open in Safari, goes here. (optional) *)</string>
+		<key>AMDSummary</key>
+		<string>(* AMDSummary text to explain what your action does goes here. *)</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>StuffIt</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Archive</string>
+		<string>Create</string>
+		<string>Make</string>
+		<string>File</string>
+		<string>Folder</string>
+		<string>Stuff</string>
+		<string>StuffIt</string>
+		<string>Zip</string>
+	</array>
+	<key>AMName</key>
+	<string>Create Zip Archive</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array/>
+	<key>AMWarning</key>
+	<dict>
+		<key>Action</key>
+		<string>(* Action name to be suggested to add prior to this action to make the task safer, e.g. com.apple.Automator.CopyFiles, goes here. *)</string>
+		<key>ApplyButton</key>
+		<string>(* Button label for user to add proposed Action, e.g. Add. *)</string>
+		<key>IgnoreButton</key>
+		<string>(* Button label for user not to add proposed Action, e.g. Don't Add. *)</string>
+		<key>Level</key>
+		<integer>0</integer>
+		<key>Message</key>
+		<string>(* Warning message presented to user goes here. *)</string>
+	</dict>
+	<key>BuildNumber</key>
+	<string>245</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Create Zip Archive</string>
+	<key>CFBundleGetInfoString</key>
+	<string>12.0.1 (Build 245), Copyright 1990-2007 Smith Micro Software, Inc.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.stuffit.Zip</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleLongVersionString</key>
+	<string>12.0.1 (Build 245), Copyright 1990-2007 Smith Micro Software, Inc.</string>
+	<key>CFBundleName</key>
+	<string>Create Zip Archive</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>12.0.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>12.0.1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.4.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright 1990-2007 Smith Micro Software, Inc.</string>
+	<key>NSPrincipalClass</key>
+	<string>ZipAction</string>
+</dict>
+</plist>

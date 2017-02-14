@@ -1,0 +1,40 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showPreferences = id; }; 
+            CLASS = DragWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {destinations = id; drawer = id; dropView = id; tabView = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = DropController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {dragView = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = DropImageView; LANGUAGE = ObjC; SUPERCLASS = NSImageView; }, 
+        {CLASS = DropView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {segmentSelection = id; }; 
+            CLASS = SegmentMenuController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {segments = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = StuffItXController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {encryptButton = id; segments = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = ZipController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {encryptButton = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

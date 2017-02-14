@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {selectDestinationFolder = id; }; 
+            CLASS = DestinationPrefController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {compressionMenu = id; expansionMenu = id; prefsView = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = DestinationPrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsView = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

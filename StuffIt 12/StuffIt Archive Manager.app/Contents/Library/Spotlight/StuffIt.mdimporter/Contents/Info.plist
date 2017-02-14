@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildNumber</key>
+	<string>245</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>MDImporter</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.allume.stuffit-archive</string>
+				<string>com.stuffit.archive.sit</string>
+				<string>com.stuffit.archive.sitx</string>
+				<string>com.pkware.zip-archive</string>
+				<string>org.gnu.gnu-tar-archive</string>
+				<string>public.tar-archive</string>
+				<string>org.gnu.gnu-zip-archive</string>
+				<string>org.gnu.gnu-zip-tar-archive</string>
+				<string>com.rarlab.rar-archive</string>
+				<string>public.archive</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>StuffIt</string>
+	<key>CFBundleGetInfoString</key>
+	<string>12.0.1 (Build 245), Copyright 1990-2007 Smith Micro Software, Inc.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.stuffit.mdimporter</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleLongVersionString</key>
+	<string>12.0.1 (Build 245), Copyright 1990-2007 Smith Micro Software, Inc.</string>
+	<key>CFBundleName</key>
+	<string>StuffIt Spotlight Importer</string>
+	<key>CFBundleShortVersionString</key>
+	<string>12.0.1</string>
+	<key>CFBundleVersion</key>
+	<string>12.0.1</string>
+	<key>CFPlugInDynamicRegisterFunction</key>
+	<string></string>
+	<key>CFPlugInDynamicRegistration</key>
+	<string>NO</string>
+	<key>CFPlugInFactories</key>
+	<dict>
+		<key>34054261-6282-4900-8434-E9B8CE2EA27F</key>
+		<string>MetadataImporterPluginFactory</string>
+	</dict>
+	<key>CFPlugInTypes</key>
+	<dict>
+		<key>8B08C4BF-415B-11D8-B3F9-0003936726FC</key>
+		<array>
+			<string>34054261-6282-4900-8434-E9B8CE2EA27F</string>
+		</array>
+	</dict>
+	<key>CFPlugInUnloadFunction</key>
+	<string></string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.4.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright 1990-2007 Smith Micro Software, Inc.</string>
+</dict>
+</plist>

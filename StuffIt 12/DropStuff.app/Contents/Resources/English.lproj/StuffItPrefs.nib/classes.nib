@@ -1,0 +1,36 @@
+{
+    IBClasses = (
+        {CLASS = ClicklessButtonCell; LANGUAGE = ObjC; SUPERCLASS = NSButtonCell; }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = RecompressorsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {optionsView = id; recompressorsTable = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {segmentSelection = id; }; 
+            CLASS = SegmentMenuController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {segments = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                compressionLevelSelection = id; 
+                setCompatibility = id; 
+                showCustomSettings = id; 
+            }; 
+            CLASS = StuffItPrefController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {encryptButton = id; prefsView = id; segments = id; tabView = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

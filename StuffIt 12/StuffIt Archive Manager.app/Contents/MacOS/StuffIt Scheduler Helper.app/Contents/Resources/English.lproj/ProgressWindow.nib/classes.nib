@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancelledAction = id; }; 
+            CLASS = ProgressWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                actionTextField = NSTextField; 
+                cancelButton = NSButton; 
+                progressBar = NSProgressIndicator; 
+                progressTextField = NSTextField; 
+                remainingTextField = NSTextField; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

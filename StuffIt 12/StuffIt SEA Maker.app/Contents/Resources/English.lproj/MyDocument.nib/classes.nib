@@ -1,0 +1,117 @@
+{
+    IBClasses = (
+        {
+            CLASS = DestinationTableColumn; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {destMenu = id; }; 
+            SUPERCLASS = NSTableColumn; 
+        }, 
+        {CLASS = DiskImage; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = FilesInfoMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {infoTabView = id; itemTable = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = IconImageView; LANGUAGE = ObjC; SUPERCLASS = NSImageView; }, 
+        {
+            CLASS = ImageInfoMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {fileName = id; imageView = id; infoTabView = id; itemTable = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = InfoMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {infoTabView = id; itemTable = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = InstallInfoMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {infoTabView = id; itemTable = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancelButton = id; }; 
+            CLASS = InstallerMaker; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {document = id; progressBar = id; progressWindow = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = Item; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {addItemButton = id; removeItemButton = id; }; 
+            CLASS = ItemListMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {itemArray = id; itemTable = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {addItemButton = id; removeItemButton = id; }; 
+            CLASS = ItemTableArrayController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {itemTable = NSTableView; }; 
+            SUPERCLASS = NSArrayController; 
+        }, 
+        {
+            ACTIONS = {
+                addItemButton = id; 
+                okOrCancelButton = id; 
+                popupMenuHit = id; 
+                removeItemButton = id; 
+            }; 
+            CLASS = ItemTableDataSource; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                choosePhasePanel = id; 
+                deleteButton = id; 
+                document = MyDocument; 
+                itemTable = NSOutlineView; 
+                phaseMatrix = id; 
+            }; 
+            SUPERCLASS = NSArrayController; 
+        }, 
+        {
+            ACTIONS = {editLayout = id; selectBackgroundImage = id; }; 
+            CLASS = LayoutEditor; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                document = id; 
+                drawer = id; 
+                installerIcon = id; 
+                readmeIcon = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {build = id; buildImage = id; burn = id; newMiniInstaller = id; open = id; }; 
+            CLASS = MenuMediator; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {selectSplashImage = id; }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {drawer = id; itemTable = id; }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            CLASS = TextInfoMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {fileName = id; infoTabView = id; itemTable = id; textView = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = ToolbarMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {document = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = phaseTable; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }
+    ); 
+    IBVersion = 1; 
+}

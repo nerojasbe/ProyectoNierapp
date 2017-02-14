@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="StuffIt Expander Terminology">
+	<suite name="StuffIt Expander Scripting" code="SITx" description="Commands and classes for StuffIt Expander Scripting">
+		<enumeration name="folder creation" code="TYPE">
+			<enumerator name="smart" code="SMRT"/>
+			<enumerator name="always" code="ALWY"/>
+			<enumerator name="never" code="NEVR"/>
+		</enumeration>
+		<command name="expand" code="SITxXpnd" description="Expand archives">
+			<cocoa class="ExpandCommand"/>
+			<direct-parameter description="item or list of archives to be expanded">
+				<type type="file" list="yes"/>
+			</direct-parameter>
+			<result description="the expanded items">
+				<type type="file" list="yes"/>
+			</result>
+			<parameter name="to" code="dest" type="file" optional="yes" description="optional destination to expand into">
+				<cocoa key="to"/>
+			</parameter>
+			<parameter name="delete originals" code="dele" type="boolean" optional="yes" description="after successful expansion, the archives will be deleted (default is false)">
+				<cocoa key="delete originals"/>
+			</parameter>
+			<parameter name="password" code="PASS" type="text" optional="yes" description="optional password to expand encrypted archives">
+				<cocoa key="password"/>
+			</parameter>
+			<parameter name="continue to expand" code="cont" type="boolean" optional="yes" description="continue to expand archives (default is false)">
+				<cocoa key="contine to expand"/>
+			</parameter>
+			<parameter name="create enclosing folder" code="CRFL" type="folder creation" optional="yes" description="create enclosing folder for expansion results (default is smart)">
+				<cocoa key="create enclosing folder"/>
+			</parameter>
+		</command>
+		<command name="install" code="SITxINST" description="Install the StuffIt Engine">
+			<cocoa class="InstallCommand"/>
+		</command>
+	</suite>
+</dictionary>

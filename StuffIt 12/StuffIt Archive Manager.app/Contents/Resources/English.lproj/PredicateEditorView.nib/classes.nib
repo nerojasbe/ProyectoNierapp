@@ -1,0 +1,39 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = LikeOperationFormatter; LANGUAGE = ObjC; SUPERCLASS = NSFormatter; }, 
+        {CLASS = NSDatePicker; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {
+                addNewPredicate = id; 
+                handleKindPopUp = id; 
+                handleLevel1PopUp = id; 
+                handleNameOperatorPopUp = id; 
+                handleWhenPopUp = id; 
+                removePredicate = id; 
+            }; 
+            CLASS = PredicateViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                datePicker = NSDatePicker; 
+                kindArchivePopUp = NSPopUpButton; 
+                kindImagePopUp = NSPopUpButton; 
+                kindPopUp = NSPopUpButton; 
+                level1PopUp = NSPopUpButton; 
+                nameField = NSTextField; 
+                nameOperatorPopUp = NSPopUpButton; 
+                removePredicateButton = NSButton; 
+                sizeField = NSTextField; 
+                sizeMultiplier = NSPopUpButton; 
+                sizeOperator = NSPopUpButton; 
+                view = NSView; 
+                viewController = NSObjectController; 
+                whenMultiplierField = NSTextField; 
+                whenPeriodPopUp = NSPopUpButton; 
+                whenPopUp = NSPopUpButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

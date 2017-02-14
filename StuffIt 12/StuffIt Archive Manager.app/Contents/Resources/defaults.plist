@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>allowVersionChecking</key>
+	<true/>
+	<key>avApps</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Symantec Antivirus</string>
+			<key>signature</key>
+			<string>SAvX</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>VirusScan</string>
+			<key>signature</key>
+			<string>virX</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>VirusBarrier</string>
+			<key>signature</key>
+			<string>vbr1</string>
+		</dict>
+	</array>
+	<key>blockMode_sitx</key>
+	<true/>
+	<key>compressDefaultName</key>
+	<string>untitled archive.sitx</string>
+	<key>compressDefaultType</key>
+	<integer>0</integer>
+	<key>compressionLevel_zip</key>
+	<integer>6</integer>
+	<key>compressionMethod_sitx</key>
+	<integer>5</integer>
+	<key>compressionMethod_zip</key>
+	<integer>1</integer>
+	<key>compressionTab</key>
+	<integer>1</integer>
+	<key>createIndexArchives</key>
+	<true/>
+	<key>customVirusApp</key>
+	<data>
+	</data>
+	<key>dontRecompress</key>
+	<true/>
+	<key>encodingLevel_sitx</key>
+	<integer>0</integer>
+	<key>encryptionMethod_sitx</key>
+	<integer>0</integer>
+	<key>encryptWithPassword</key>
+	<false/>
+	<key>expandDestinationAlias</key>
+	<data>
+	</data>
+	<key>generalConvertOldArchivesOnOpen</key>
+	<true/>
+	<key>ignoreDesktopFiles</key>
+	<true/>
+	<key>optimizers_sitx</key>
+	<false/>
+	<key>prefsVersion</key>
+	<integer>11</integer>
+	<key>redundancyLevel_sitx</key>
+	<integer>0</integer>
+	<key>scanForViruses</key>
+	<false/>
+	<key>segmentSize</key>
+	<integer>0</integer>
+	<key>setExecutePermissions</key>
+	<true/>
+	<key>sitx_recompressZip</key>
+	<true/>
+	<key>sitx_recompressMP3</key>
+	<false/>
+	<key>sitx_recompressBMP</key>
+	<false/>
+	<key>sitx_recompressGIF</key>
+	<false/>
+	<key>sitx_recompressPNG</key>
+	<false/>
+	<key>sitx_recompressTIFF</key>
+	<false/>
+	<key>sitx_recompressPDF</key>
+	<false/>
+	<key>sitx_recompressJPEGLossless</key>
+	<false/>
+	<key>sitx_recompressPSD</key>
+	<false/>
+	<key>sitx_recompressPICT</key>
+	<false/>
+	<key>sitx_recompressJPEG2K</key>
+	<false/>
+	<key>sitx_recompressPTT5</key>
+	<false/>
+	<key>sitx_recompressPXM</key>
+	<false/>
+	<key>sitx_OverrideArchiveVersion</key>
+	<false/>
+	<key>sitx_ArchiveVersion</key>
+	<integer>0</integer>
+	<key>stuffitCompressJPEG</key>
+	<true/>
+	<key>stuffItCompressionLevel</key>
+	<string></string>
+	<key>stuffItJPEGCompression</key>
+	<integer>4</integer>
+	<key>stuffitUseThumbnails</key>
+	<true/>
+	<key>virusApplication</key>
+	<integer>2000</integer>
+	<key>zipCompressionLevel</key>
+	<integer>1000</integer>
+	<key>zipEncodeContent</key>
+	<true/>
+	<key>previewAnyFile</key>
+	<true/>
+	<key>stuffItArchive</key>
+	<string>(kMDItemFSCreatorCode == 'aust') OR (kMDItemContentType == 'com.stuffit.archive.sit') OR (kMDItemDisplayName like[cd] '*.sit')</string>
+	<key>stuffItXArchive</key>
+	<string>(kMDItemContentType == 'com.stuffit.archive.sitx') OR (kMDItemDisplayName like[cd] '*.sitx')</string>
+	<key>stuffItXIndexArchive</key>
+	<string>(kMDItemContentType == 'com.stuffit.archive.sidx') OR (kMDItemDisplayName like[cd] '*.sidx')</string>
+	<key>stuffItAllArchives</key>
+	<string>(kMDItemContentTypeTree == 'com.allume.stuffit-archive')</string>
+	<key>zipArchive</key>
+	<string>(kMDItemContentType == 'com.pkware.zip-archive') OR (kMDItemDisplayName like[cd] '*.zip') OR (kMDItemDisplayName like[cd] '*.cbz')</string>
+	<key>tarArchive</key>
+	<string>(kMDItemContentType == 'public.tar-archive') OR (kMDItemDisplayName like[cd] '*.tar') OR (kMDItemDisplayName like[cd] '*.tar.gz') OR (kMDItemDisplayName like[cd] '*.tgz') OR (kMDItemDisplayName like[cd] '*.tar.bz2') OR (kMDItemDisplayName like[cd] '*.tbz2') OR (kMDItemDisplayName like[cd] '*.tbz') OR (kMDItemDisplayName like[cd] '*.tar.Z') OR (kMDItemDisplayName like[cd] '*.tz') OR (kMDItemDisplayName like[cd] '*.cbt')</string>
+	<key>rarFile</key>
+	<string>(kMDItemDisplayName like[cd] '*.rar') OR (kMDItemDisplayName like[cd] '*.cbr')</string>
+</dict>
+</plist>

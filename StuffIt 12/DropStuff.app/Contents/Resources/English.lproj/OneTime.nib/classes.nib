@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {selectTarCompression = id; }; 
+            CLASS = OneTimePrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                accessoryView = id; 
+                destination = id; 
+                stuffItEncrypt = id; 
+                stuffItSegment = id; 
+                tabView = id; 
+                zipEncrypt = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

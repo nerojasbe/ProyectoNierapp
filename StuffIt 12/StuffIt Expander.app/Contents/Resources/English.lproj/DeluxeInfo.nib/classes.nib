@@ -1,0 +1,17 @@
+{
+    IBClasses = (
+        {
+            CLASS = DeluxeInfoController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {printOrderForm = id; purchaseOnline = id; saveOrderForm = id; }; 
+            CLASS = NSObject; 
+            LANGUAGE = ObjC; 
+        }
+    ); 
+    IBVersion = 1; 
+}

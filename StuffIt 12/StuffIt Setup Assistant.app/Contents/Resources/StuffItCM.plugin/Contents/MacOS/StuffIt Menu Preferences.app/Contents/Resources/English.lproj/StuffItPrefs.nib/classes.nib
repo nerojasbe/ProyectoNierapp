@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {segmentSelection = id; }; 
+            CLASS = SegmentMenuController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {segments = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {compressionLevelSelection = id; showCustomSettings = id; }; 
+            CLASS = StuffItPrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                compressJPEGButton = id; 
+                compressionLevel = id; 
+                customSettings = id; 
+                encryptButton = id; 
+                jpegCompressionLevel = id; 
+                prefsView = id; 
+                segments = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

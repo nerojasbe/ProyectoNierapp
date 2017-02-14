@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {selectAVApp = id; selectDestination = id; }; 
+            CLASS = ExpansionPrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {avMenu = id; destMenu = id; prefsView = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

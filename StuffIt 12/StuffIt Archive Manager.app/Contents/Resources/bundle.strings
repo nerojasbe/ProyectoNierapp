@@ -1,0 +1,1 @@
+// Extensions types that we treat as bundles"application bundle" = "app";"plugin bundle" = "plugin";"bundle" = "bundle";"cfm bundle" = "cfm";"kext bundle" = "kext";"Pages bundle" = "pages";"Keynote bundle" = "key";

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>allowVersionChecking</key>
+	<true/>
+	<key>avApps</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Norton Antivirus</string>
+			<key>signature</key>
+			<string>SAvX</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Virex</string>
+			<key>signature</key>
+			<string>virX</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>VirusBarrier</string>
+			<key>signature</key>
+			<string>vbr1</string>
+		</dict>
+	</array>
+	<key>checkWatchFolder</key>
+	<false/>
+	<key>continueToExpand</key>
+	<true/>
+	<key>createSurroundingFolder</key>
+	<integer>1</integer>
+	<key>createSurroundingFolder_OneTime</key>
+	<integer>1</integer>
+	<key>deleteArchives</key>
+	<false/>
+	<key>destinationChoice</key>
+	<integer>0</integer>
+	<key>destinationChoice_OneTime</key>
+	<integer>0</integer>
+	<key>errorReportingChoice</key>
+	<integer>0</integer>
+	<key>installEngine</key>
+	<false/>
+	<key>mountDiskImages</key>
+	<true/>
+	<key>prefsVersion</key>
+	<integer>10</integer>
+	<key>scanForViruses</key>
+	<false/>
+	<key>virusApplication</key>
+	<data>TkF2WA==</data>
+	<key>setExecutePermissions</key>
+	<true/>
+	<key>showExpanderWindow</key>
+	<true/>
+	<key>useThreads</key>
+	<true/>
+</dict>
+</plist>

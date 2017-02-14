@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {compressionLevelSelection = id; showCustomSettings = id; }; 
+            CLASS = ZipPrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                compressionLevel = id; 
+                customSettings = id; 
+                encryptView = id; 
+                prefsView = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

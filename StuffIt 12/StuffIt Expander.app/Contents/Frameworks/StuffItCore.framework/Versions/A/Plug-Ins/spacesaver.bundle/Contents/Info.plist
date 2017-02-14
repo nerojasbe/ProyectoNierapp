@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildNumber</key>
+	<string>254</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>spacesaver</string>
+	<key>CFBundleGetInfoString</key>
+	<string>10.0.1 (Build 254), Copyright 1990-2005 Allume Systems, Inc.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.stuffit.format.spacesaver</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleLongVersionString</key>
+	<string>10.0.1 (Build 254), Copyright 1990-2005 Allume Systems, Inc.</string>
+	<key>CFBundleName</key>
+	<string>spacesaver</string>
+	<key>CFBundleShortVersionString</key>
+	<string>10.0.1</string>
+	<key>CFBundleVersion</key>
+	<string>10.0.1</string>
+	<key>CFPlugInDynamicRegisterFunction</key>
+	<string></string>
+	<key>CFPlugInDynamicRegistration</key>
+	<string>NO</string>
+	<key>CFPlugInFactories</key>
+	<dict>
+		<key>E04B973A-ADFB-11D9-9BC0-000A95ACBFE2</key>
+		<string>FormatPluginFactory</string>
+	</dict>
+	<key>CFPlugInTypes</key>
+	<dict>
+		<key>D30D99DC-59E9-11D7-A6B2-0003938E3848</key>
+		<array>
+			<string>E04B973A-ADFB-11D9-9BC0-000A95ACBFE2</string>
+		</array>
+	</dict>
+	<key>CFPlugInUnloadFunction</key>
+	<string></string>
+</dict>
+</plist>

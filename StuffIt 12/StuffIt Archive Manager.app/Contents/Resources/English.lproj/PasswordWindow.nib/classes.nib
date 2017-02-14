@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancelButton = id; okButton = id; }; 
+            CLASS = PasswordWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                okButton = NSButton; 
+                passwordField = NSTextField; 
+                passwordPrompt = NSTextField; 
+                theWindow = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

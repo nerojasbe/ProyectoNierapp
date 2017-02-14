@@ -1,0 +1,68 @@
+{
+    IBClasses = (
+        {
+            CLASS = CompressionPrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsView = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {segmentSelection = id; }; 
+            CLASS = SegmentMenuController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {segments = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                compressionLevelSelection = id; 
+                setupRecompressors = id; 
+                showCustomSettings = id; 
+            }; 
+            CLASS = StuffItPrefController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                compressJPEGButton = id; 
+                compressionLevel = id; 
+                customSettings = id; 
+                encryptButton = id; 
+                jpegCompressionLevel = id; 
+                makeSEAButton = id; 
+                prefsView = id; 
+                segments = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {compressionLevel = id; showCustomSettings = id; }; 
+            CLASS = TarPrefController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                compressionLevel = id; 
+                compressionType = id; 
+                customSettings = id; 
+                prefsView = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {compressionLevelSelection = id; showCustomSettings = id; }; 
+            CLASS = ZipPrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                compressionLevel = id; 
+                customSettings = id; 
+                encryptView = id; 
+                prefsView = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

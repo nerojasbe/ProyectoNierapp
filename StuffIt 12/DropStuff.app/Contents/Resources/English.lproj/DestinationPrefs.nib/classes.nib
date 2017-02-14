@@ -1,0 +1,62 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {selectDisc = id; selectFTP = id; selectFolder = id; }; 
+            CLASS = DestinationPrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                destMenu = id; 
+                dotMacController = id; 
+                ftpController = id; 
+                prefsView = id; 
+                tabView = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = DiscBurnDestinationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {tempPath = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {learnMore = id; }; 
+            CLASS = DotMacDestinationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dotMacDescription = id; 
+                infoButton = id; 
+                infoDivider = id; 
+                signUp = id; 
+                spinner = id; 
+                status = id; 
+                tempDivider = id; 
+                tempPath = id; 
+                tempPathTitle = id; 
+                tempSelect = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = DropStuffPreferencesController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {selectTempDestination = id; }; 
+            CLASS = FTPDestinationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {password = id; path = id; server = id; tempPath = id; username = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {folderChoice = id; }; 
+            CLASS = FolderDestinationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {destMenu = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

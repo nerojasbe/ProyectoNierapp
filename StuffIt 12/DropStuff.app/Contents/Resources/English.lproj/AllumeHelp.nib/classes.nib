@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {openURL = id; showHelp = id; }; 
+            CLASS = AladdinHelpMenu; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {helpMenu = NSMenu; regPurMenuItem = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd"> 
+<dictionary title="StuffItHelper Terminology">
+  <!--
+    STANDARD SUITE
+  -->
+  <suite name="Standard Suite" code="????" 
+      description="Common classes and commands for all applications."> 
+    <enumeration name="save options" code="savo"> 
+      <enumerator name="yes" code="yes " description="Save the file."/> 
+      <enumerator name="no" code="no  " description="Do not save the file."/> 
+      <enumerator name="ask" code="ask " 
+        description="Ask the user whether or not to save the file."/> 
+    </enumeration> 
+    <command name="quit" code="aevtquit" description="Quit the application."> 
+      <cocoa class="NSQuitCommand"/> 
+      <parameter name="saving" code="savo" type="save options" optional="yes" 
+        description="Whether or not changed documents should be saved before closing."> 
+        <cocoa key="SaveOptions"/> 
+      </parameter> 
+    </command> 
+    <command name="count" code="corecnte" 
+        description="Return the number of elements of a particular class within an object."> 
+      <cocoa class="NSCountCommand"/> 
+      <direct-parameter type="specifier" 
+        description="the object whose elements are to be counted"/> 
+      <parameter name="each" code="kocl" type="type" optional="yes" 
+        description="The class of objects to be counted."> 
+        <cocoa key="ObjectClass"/> 
+      </parameter> 
+      <result type="integer" description="the number of elements"/> 
+    </command> 
+    <command name="exists" code="coredoex" description="Verify if an object exists."> 
+      <cocoa class="NSExistsCommand"/> 
+      <direct-parameter type="any" description="the object in question"/> 
+      <result type="boolean" description="true if it exists, false if not"/> 
+    </command> 
+    <class name="application" code="capp" 
+        description="The application's top-level scripting object."> 
+      <cocoa class="NSApplication"/> 
+      <property name="name" code="pnam" type="text" access="r" 
+        description="The name of the application."/> 
+      <property name="frontmost" code="pisf" type="boolean" access="r" 
+        description="Is this the frontmost (active) application?"> 
+        <cocoa key="isActive"/> 
+      </property> 
+      <property name="version" code="vers" type="text" access="r" 
+        description="The version of the application."/> 
+      <element type="window" access="r"> 
+        <cocoa key="orderedWindows"/> 
+      </element> 
+      <responds-to name="quit"> 
+        <cocoa method="handleQuitScriptCommand:"/> 
+      </responds-to> 
+    </class> 
+    <class name="window" code="cwin" description="A window."> 
+      <cocoa class="NSWindow"/> 
+      <property name="name" code="pnam" type="text" access="r" 
+        description="The full title of the window."> 
+        <cocoa key="title"/> 
+      </property> 
+      <property name="id" code="ID  " type="integer" access="r" 
+        description="The unique identifier of the window."> 
+        <cocoa key="uniqueID"/> 
+      </property> 
+      <property name="index" code="pidx" type="integer" 
+        description="The index of the window, ordered front to back."> 
+        <cocoa key="orderedIndex"/> 
+      </property> 
+      <property name="bounds" code="pbnd" type="rectangle" 
+        description="The bounding rectangle of the window."> 
+        <cocoa key="boundsAsQDRect"/> 
+      </property> 
+      <property name="closeable" code="hclb" type="boolean" access="r" 
+        description="Whether the window has a close box."> 
+        <cocoa key="hasCloseBox"/> 
+      </property> 
+      <property name="miniaturizable" code="ismn" type="boolean" access="r" 
+        description="Whether the window can be minimized."> 
+        <cocoa key="isMiniaturizable"/> 
+      </property> 
+      <property name="miniaturized" code="pmnd" type="boolean" 
+        description="Whether the window is currently minimized."> 
+        <cocoa key="isMiniaturized"/> 
+      </property> 
+      <property name="resizable" code="prsz" type="boolean" access="r" 
+        description="Whether the window can be resized."> 
+        <cocoa key="isResizable"/> 
+      </property> 
+      <property name="visible" code="pvis" type="boolean" 
+        description="Whether the window is currently visible."> 
+        <cocoa key="isVisible"/> 
+      </property> 
+      <property name="zoomable" code="iszm" type="boolean" access="r" 
+        description="Whether the window can be zoomed."> 
+        <cocoa key="isZoomable"/> 
+      </property> 
+      <property name="zoomed" code="pzum" type="boolean" 
+        description="Whether the window is currently zoomed."> 
+        <cocoa key="isZoomed"/> 
+      </property> 
+      <responds-to name="close"> 
+        <cocoa method="handleCloseScriptCommand:"/> 
+      </responds-to> 
+    </class> 
+  </suite> 
+
+  <!--
+    StuffItHelper SUITE
+  -->
+  <suite name="StuffItHelper Suite" code="stCM" 
+      description="StuffItHelper specific classes."> 
+	
+	<value-type name="PList" code="PLst">
+    <cocoa class="NSDictionary"/>
+	</value-type>
+						
+    <!-- Classes -->
+    <!-- Commands -->
+    <command name="expand" code="stCMXPND" description="Expand an archive.">
+      <cocoa class="SHExpandCommand"/> 
+      <direct-parameter description="The archive file(s) to be expanded">
+        <type type="file" list="yes"/>
+      </direct-parameter>
+
+      <parameter name="options" code="Optn" type="PList" optional="yes" description="Serialized Options Property List. See HelperDispatch.h for details.">
+	  <cocoa key="options"/>
+	  </parameter>
+    </command>
+
+    <command name="create archive" code="stCMCREA" description="Create an archive.">
+      <cocoa class="SHArchiveCommand"/> 
+      <direct-parameter description="The file(s) to be included in the new archive.">
+        <type type="file" list="yes"/>
+      </direct-parameter>
+
+      <parameter name="options" code="Optn" type="PList" optional="yes" description="Serialized Options Property List. See HelperDispatch.h for details.">
+	  <cocoa key="options"/>
+	  </parameter>
+
+    </command>
+
+
+    <command name="encode" code="stCMENCD" description="Encode a file">
+      <cocoa class="SHEncodeCommand"/> 
+      <direct-parameter description="The file to be encoded.">
+        <type type="file" list="no"/>
+      </direct-parameter>
+    </command>
+
+
+    <command name="removeSEA" code="stCMRSEA" description="Remove the self-extracting code from a self-extracting archive.">
+      <cocoa class="SHRemoveSEACommand"/> 
+      <direct-parameter description="The self-extracting archive(s).">
+        <type type="file" list="yes"/>
+      </direct-parameter>
+    </command>
+
+
+    <command name="verify" code="stCMVRFY" description="Verify the integrity of an archive.">
+      <cocoa class="SHVerifyCommand"/> 
+      <direct-parameter description="The archive(s) to be verified.">
+        <type type="file" list="yes"/>
+      </direct-parameter>
+    </command>
+
+    <command name="index archive" code="stCMINDX" description="Create an index file for an archive.">
+      <cocoa class="SHIndexCommand"/> 
+      <direct-parameter description="The archive(s) to be indexed.">
+        <type type="file" list="yes"/>
+      </direct-parameter>
+    </command>
+
+    <command name="mail" code="stCMMAIL" description="Mail something.">
+      <cocoa class="SHMailCommand"/> 
+      <direct-parameter description="The thing to be mailed.">
+        <type type="file" list="no"/>
+      </direct-parameter>
+    </command>
+
+
+  </suite> 
+</dictionary>

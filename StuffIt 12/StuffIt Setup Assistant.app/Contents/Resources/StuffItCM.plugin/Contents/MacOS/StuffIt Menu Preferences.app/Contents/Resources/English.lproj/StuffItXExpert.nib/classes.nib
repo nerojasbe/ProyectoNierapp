@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {compressionMethod = id; done = id; extentChanged = id; }; 
+            CLASS = StuffItXExpertController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                compLevel = id; 
+                compMem = id; 
+                expandMem = id; 
+                memConsumption = id; 
+                methodMenu = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

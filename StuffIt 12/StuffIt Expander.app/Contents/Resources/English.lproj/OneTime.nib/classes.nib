@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {}; 
+            CLASS = OneTimePrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {accessoryView = id; mergeButton = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

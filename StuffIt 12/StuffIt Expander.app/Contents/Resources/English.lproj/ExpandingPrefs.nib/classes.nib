@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                errorReportSelection = id; 
+                selectVirusApp = id; 
+                toggleExpanderDaemon = id; 
+                watchFolderSelection = id; 
+            }; 
+            CLASS = ExpansionPrefController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsView = id; reportsMenu = id; virusAppMenu = id; watchFolderMenu = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

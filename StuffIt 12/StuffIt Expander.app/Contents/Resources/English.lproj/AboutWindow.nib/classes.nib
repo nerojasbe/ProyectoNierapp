@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showWindow = id; }; 
+            CLASS = AboutWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                creditsField = NSTextView; 
+                creditsScroll = NSScrollView; 
+                engineVersionString = id; 
+                versionString = id; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

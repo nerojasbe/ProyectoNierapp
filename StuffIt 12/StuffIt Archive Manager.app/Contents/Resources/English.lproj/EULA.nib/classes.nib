@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {agree = id; decline = id; }; 
+            CLASS = DisplayEULA; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {eulaText = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,23 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {compressionLevel = id; showCustomSettings = id; }; 
+            CLASS = TarPrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                compressionLevel = id; 
+                compressionType = id; 
+                customSettings = id; 
+                prefsView = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

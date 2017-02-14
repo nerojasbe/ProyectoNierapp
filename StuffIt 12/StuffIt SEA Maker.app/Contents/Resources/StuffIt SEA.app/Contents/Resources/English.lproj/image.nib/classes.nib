@@ -1,0 +1,15 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {okButton = id; }; 
+            CLASS = ImagePhase; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {imageView = id; window = id; }; 
+            SUPERCLASS = InstallPhase; 
+        }, 
+        {CLASS = InstallPhase; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = InstallWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }
+    ); 
+    IBVersion = 1; 
+}

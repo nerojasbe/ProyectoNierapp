@@ -1,0 +1,39 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {acceptAction = id; cancelAction = id; }; 
+            CLASS = ExistingPassphraseWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {okButton = NSButton; passwordTextField = NSTextField; window = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {acceptAction = id; cancelAction = id; }; 
+            CLASS = PassphraseWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                confirmTextField = NSTextField; 
+                okButton = NSButton; 
+                passwordTextField = NSTextField; 
+                progressBar = NSProgressIndicator; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancelledAction = id; }; 
+            CLASS = ProgressWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                actionTextField = NSTextField; 
+                cancelButton = NSButton; 
+                progressBar = NSProgressIndicator; 
+                remainingTextField = NSTextField; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

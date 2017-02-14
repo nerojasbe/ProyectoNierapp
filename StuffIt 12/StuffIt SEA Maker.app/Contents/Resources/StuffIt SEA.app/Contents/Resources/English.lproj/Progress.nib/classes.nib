@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {stopInstall = id; }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {progressWindow = ProgressWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = ProgressWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {progressBar = id; progressWindow = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Commands</key>
+	<dict>
+		<key>Stuff</key>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>adjust extension</key>
+				<dict>
+					<key>Description</key>
+					<string>remove the compound extension after BinHexing (default: true)</string>
+					<key>Name</key>
+					<string>adjust extension</string>
+				</dict>
+				<key>binhexing</key>
+				<dict>
+					<key>Description</key>
+					<string>encode the archive as a BinHex file (default: false)</string>
+					<key>Name</key>
+					<string>binhexing</string>
+				</dict>
+				<key>delete originals</key>
+				<dict>
+					<key>Description</key>
+					<string>delete the original files after successful archive creation (default: false)</string>
+					<key>Name</key>
+					<string>delete originals</string>
+				</dict>
+				<key>dont recompress</key>
+				<dict>
+					<key>Description</key>
+					<string>do not compress files that are already compressed (default: true)</string>
+					<key>Name</key>
+					<string>dont recompress</string>
+				</dict>
+				<key>format</key>
+				<dict>
+					<key>Description</key>
+					<string>type of StuffIt archive to create (default: StuffItX)</string>
+					<key>Name</key>
+					<string>format</string>
+				</dict>
+				<key>ignore desktop files</key>
+				<dict>
+					<key>Description</key>
+					<string>ignore Finder files such as .DSStore (default: true)</string>
+					<key>Name</key>
+					<string>ignore desktop files</string>
+				</dict>
+				<key>individually</key>
+				<dict>
+					<key>Description</key>
+					<string>archive each file as an individual archive (default: false)</string>
+					<key>Name</key>
+					<string>individually</string>
+				</dict>
+				<key>password</key>
+				<dict>
+					<key>Description</key>
+					<string>a password to use for encryption</string>
+					<key>Name</key>
+					<string>password</string>
+				</dict>
+				<key>segment size</key>
+				<dict>
+					<key>Description</key>
+					<string>size of segments to create (default: 0 or no segments)</string>
+					<key>Name</key>
+					<string>segment size</string>
+				</dict>
+				<key>to</key>
+				<dict>
+					<key>Description</key>
+					<string>the destination to create archive in</string>
+					<key>Name</key>
+					<string>to</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>compress a set of objects as a StuffIt archive</string>
+			<key>Name</key>
+			<string>stuff</string>
+			<key>UnnamedArgument</key>
+			<dict>
+				<key>Description</key>
+				<string>item or list of items to be stuffed</string>
+			</dict>
+		</dict>
+		<key>Tar</key>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>adjust extension</key>
+				<dict>
+					<key>Name</key>
+					<string>adjust extension</string>
+				</dict>
+				<key>compression level</key>
+				<dict>
+					<key>Name</key>
+					<string>compression level</string>
+				</dict>
+				<key>compression method</key>
+				<dict>
+					<key>Name</key>
+					<string>compression method</string>
+				</dict>
+				<key>encode</key>
+				<dict>
+					<key>Name</key>
+					<string>encode</string>
+				</dict>
+				<key>ignore desktop files</key>
+				<dict>
+					<key>Name</key>
+					<string>ignore desktop files</string>
+				</dict>
+				<key>preserve macintosh content</key>
+				<dict>
+					<key>Name</key>
+					<string>preserve macintosh content</string>
+				</dict>
+				<key>to</key>
+				<dict>
+					<key>Description</key>
+					<string>the destination to expand to</string>
+					<key>Name</key>
+					<string>to</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>compress a set of objects as a Tar archive</string>
+			<key>Name</key>
+			<string>tar</string>
+			<key>UnnamedArgument</key>
+			<dict>
+				<key>Description</key>
+				<string>object (or list of objects) to compress</string>
+			</dict>
+		</dict>
+		<key>Zip</key>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>adjust extension</key>
+				<dict>
+					<key>Name</key>
+					<string>adjust extension</string>
+				</dict>
+				<key>compression level</key>
+				<dict>
+					<key>Name</key>
+					<string>compression level</string>
+				</dict>
+				<key>encode</key>
+				<dict>
+					<key>Name</key>
+					<string>encode</string>
+				</dict>
+				<key>ignore desktop files</key>
+				<dict>
+					<key>Name</key>
+					<string>ignore desktop files</string>
+				</dict>
+				<key>password</key>
+				<dict>
+					<key>Name</key>
+					<string>password</string>
+				</dict>
+				<key>preserve macintosh content</key>
+				<dict>
+					<key>Name</key>
+					<string>preserve macintosh content</string>
+				</dict>
+				<key>to</key>
+				<dict>
+					<key>Description</key>
+					<string>the destination to expand to</string>
+					<key>Name</key>
+					<string>to</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>compress a set of objects as a Zip archive</string>
+			<key>Name</key>
+			<string>zip</string>
+			<key>UnnamedArgument</key>
+			<dict>
+				<key>Description</key>
+				<string>object (or list of objects) to compress</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Commands and classes for DropStuff Scripting</string>
+	<key>Enumerations</key>
+	<dict>
+		<key>CompressionLevels</key>
+		<dict>
+			<key>Better</key>
+			<dict>
+				<key>Name</key>
+				<string>better</string>
+			</dict>
+			<key>Custom</key>
+			<dict>
+				<key>Name</key>
+				<string>custom</string>
+			</dict>
+			<key>Faster</key>
+			<dict>
+				<key>Name</key>
+				<string>faster</string>
+			</dict>
+			<key>None</key>
+			<dict>
+				<key>Name</key>
+				<string>none</string>
+			</dict>
+		</dict>
+		<key>Destinations</key>
+		<dict>
+			<key>Folder</key>
+			<dict>
+				<key>Name</key>
+				<string>folder</string>
+			</dict>
+			<key>Ftp</key>
+			<dict>
+				<key>Name</key>
+				<string>ftp</string>
+			</dict>
+			<key>RecordableMedia</key>
+			<dict>
+				<key>Name</key>
+				<string>recordable media</string>
+			</dict>
+		</dict>
+		<key>Encodings</key>
+		<dict>
+			<key>Binhex</key>
+			<dict>
+				<key>Name</key>
+				<string>Binhex</string>
+			</dict>
+			<key>None</key>
+			<dict>
+				<key>Name</key>
+				<string>none</string>
+			</dict>
+			<key>UUCode</key>
+			<dict>
+				<key>Name</key>
+				<string>UUCode</string>
+			</dict>
+		</dict>
+		<key>FolderDestinations</key>
+		<dict>
+			<key>AskUser</key>
+			<dict>
+				<key>Name</key>
+				<string>ask user</string>
+			</dict>
+			<key>SameFolderAsOriginal</key>
+			<dict>
+				<key>Name</key>
+				<string>same folder as original</string>
+			</dict>
+			<key>UseSpecifiedFolder</key>
+			<dict>
+				<key>Name</key>
+				<string>use specified folder</string>
+			</dict>
+		</dict>
+		<key>Formats</key>
+		<dict>
+			<key>StuffIt</key>
+			<dict>
+				<key>Name</key>
+				<string>StuffIt</string>
+			</dict>
+			<key>StuffItX</key>
+			<dict>
+				<key>Name</key>
+				<string>StuffItX</string>
+			</dict>
+		</dict>
+		<key>Platforms</key>
+		<dict>
+			<key>Macintosh</key>
+			<dict>
+				<key>Name</key>
+				<string>Macintosh</string>
+			</dict>
+			<key>Windows</key>
+			<dict>
+				<key>Name</key>
+				<string>Windows</string>
+			</dict>
+		</dict>
+		<key>TarCompressionMethods</key>
+		<dict>
+			<key>Bzip2</key>
+			<dict>
+				<key>Name</key>
+				<string>bzip2</string>
+			</dict>
+			<key>Gzip</key>
+			<dict>
+				<key>Name</key>
+				<string>gzip</string>
+			</dict>
+			<key>None</key>
+			<dict>
+				<key>Name</key>
+				<string>none</string>
+			</dict>
+			<key>UNIXCompress</key>
+			<dict>
+				<key>Name</key>
+				<string>UNIX compress</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Name</key>
+	<string>DropStuff Scripting</string>
+</dict>
+</plist>

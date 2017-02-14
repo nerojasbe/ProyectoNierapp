@@ -1,0 +1,64 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {continueInstall = id; quitInstall = id; quitLog = id; registerDeluxe = id; }; 
+            CLASS = AppDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bulletStepsView = id; 
+                finishButton = id; 
+                introPanel = id; 
+                logInfo = id; 
+                mainWindow = id; 
+                progressPanel = id; 
+                regController = id; 
+                serialController = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = BulletStepsView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {registerLater = id; registerNow = id; }; 
+            CLASS = RegistrationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                address1 = id; 
+                address2 = id; 
+                city = id; 
+                company = id; 
+                country = id; 
+                email = id; 
+                extension = id; 
+                firstName = id; 
+                lastName = id; 
+                occupation = id; 
+                phone = id; 
+                postalCode = id; 
+                regNumber = id; 
+                regWindow = id; 
+                registerLaterButton = id; 
+                registerNowButton = id; 
+                spam = id; 
+                state = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {handleRegistration = id; quitRegistration = id; }; 
+            CLASS = SerialController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                error = id; 
+                organization = id; 
+                regButton = id; 
+                regCode = id; 
+                regPanel = id; 
+                userName = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

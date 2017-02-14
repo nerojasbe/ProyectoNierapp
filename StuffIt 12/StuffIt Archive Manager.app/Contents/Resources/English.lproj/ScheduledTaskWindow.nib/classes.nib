@@ -1,0 +1,47 @@
+{
+    IBClasses = (
+        {CLASS = BackupDropView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = BulletStepsView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = ImageTextCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {CLASS = NSDatePicker; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {CLASS = NSTableViewExtended; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = ScheduledTaskSourceCell; LANGUAGE = ObjC; SUPERCLASS = NSButtonCell; }, 
+        {
+            ACTIONS = {
+                addSourceButton = id; 
+                backButton = id; 
+                continueButton = id; 
+                editFilter = id; 
+                filterWindowComplete = id; 
+                optionsButton = id; 
+                optionsCancelButton = id; 
+                optionsOKButton = id; 
+                removeSourceButton = id; 
+                selectButton = id; 
+            }; 
+            CLASS = ScheduledTaskWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                backButton = NSButton; 
+                backupDropView = BackupDropView; 
+                continueButton = NSButton; 
+                destinationView = NSView; 
+                filterDescription = NSTextField; 
+                filterView = NSView; 
+                generalView = NSView; 
+                optionsSheet = NSWindow; 
+                originalTask = id; 
+                scheduleView = NSView; 
+                sourcesArray = NSArrayController; 
+                sourcesTable = NSTableView; 
+                sourcesView = NSView; 
+                summaryView = NSView; 
+                tabView = NSTabView; 
+                title = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

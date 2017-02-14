@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = ClicklessButtonCell; LANGUAGE = ObjC; SUPERCLASS = NSButtonCell; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = RecompressorsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {optionsView = id; recompressorsTable = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {panelDone = id; }; 
+            CLASS = RecompressorsPanelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {panel = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                allowVersionChecking = id; 
+                showAboutWindow = id; 
+                showAcknowledgements = id; 
+                showDragWindow = id; 
+                showPreferences = id; 
+                showRegistrationWindow = id; 
+                stuff = id; 
+                stuffWithFilter = id; 
+            }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {appMenu = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {customizeToolbar = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

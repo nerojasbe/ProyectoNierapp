@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {selectVirusApp = id; }; 
+            CLASS = ExpansionPrefController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsView = id; virusAppMenu = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

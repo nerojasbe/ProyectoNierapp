@@ -1,0 +1,22 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {dismiss = id; purchase = id; registerApp = id; }; 
+            CLASS = RegistrationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                company = id; 
+                count = id; 
+                name = id; 
+                notYet = id; 
+                prettyPicture = id; 
+                regNumber = id; 
+                remaining = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

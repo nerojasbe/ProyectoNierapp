@@ -1,0 +1,130 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                allowVersionChecking = id; 
+                newArchive = id; 
+                openArchiveForVerification = id; 
+                showAboutWindow = id; 
+                showAcknowledgements = id; 
+                showMainWindow = id; 
+                showPreferences = id; 
+                showProgressWindow = id; 
+                showScheduler = id; 
+                showTranslator = id; 
+            }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {taskMaster = id; taskWindowController = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = ArchiveItem; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_infoWindow" = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = CustomWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {
+            ACTIONS = {
+                addItems = id; 
+                deleteItem = id; 
+                extract = id; 
+                getInfo = id; 
+                myAction = id; 
+                newArchive = id; 
+                newFolder = id; 
+                openInFinder = id; 
+                reveal = id; 
+                setView = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = IconCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {
+            ACTIONS = {
+                addCustomPredicate = id; 
+                browse = id; 
+                cancelCustomPredicate = id; 
+                doubleClick = id; 
+                newArchive = id; 
+                removeCustomPredicate = id; 
+                reveal = id; 
+                showCustomPredicateWindow = id; 
+            }; 
+            CLASS = MainWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                customSearchWindow = id; 
+                leftSplit = id; 
+                leftView = id; 
+                newArchivePanelAccessoryView = id; 
+                resultList = id; 
+                rightSplit = id; 
+                rightView = id; 
+                searchField = id; 
+                searchList = id; 
+                searchResults = id; 
+                searchView = id; 
+                theWindow = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancelEditComment = id; editComment = id; okEditComment = id; setView = id; }; 
+            CLASS = StuffItDoc; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                browserView = id; 
+                commentTextView = id; 
+                commentWindow = id; 
+                iconView = id; 
+                listView = id; 
+                listViewTable = id; 
+                tabView = id; 
+                viewIdxView = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {CLASS = StuffItDocOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }, 
+        {
+            ACTIONS = {
+                cancelEditComment = id; 
+                deleteItem = id; 
+                doubleAction = id; 
+                editComment = id; 
+                extract = id; 
+                getInfo = id; 
+                newFolder = id; 
+                okEditComment = id; 
+                openInFinder = id; 
+                setView = id; 
+            }; 
+            CLASS = StuffItDocWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                actionPopup = id; 
+                browser = id; 
+                browserView = id; 
+                commentTextView = id; 
+                commentWindow = id; 
+                iconView = id; 
+                listView = id; 
+                listViewTable = id; 
+                tabView = id; 
+                viewIdxView = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = TaskMaster; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = ToolbarMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

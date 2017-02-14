@@ -1,0 +1,33 @@
+{
+    IBClasses = (
+        {
+            CLASS = ArchiveItem; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_commentPreviewTabView" = NSTabView; 
+                "_infoWindow" = NSWindow; 
+                "_infoWindowController" = NSObjectController; 
+                "_labelPopUp" = NSPopUpButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancelEditComment = id; editComment = id; okEditComment = id; setView = id; }; 
+            CLASS = StuffItDoc; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                browserView = id; 
+                commentTextView = id; 
+                commentWindow = id; 
+                iconView = id; 
+                listView = id; 
+                listViewTable = id; 
+                tabView = id; 
+                viewIdxView = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

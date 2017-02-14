@@ -1,0 +1,140 @@
+{
+    IBClasses = (
+        {CLASS = AppController; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = ArchiveItem; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_infoWindow" = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = CustomWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {
+            CLASS = DisplayNameTransformer; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSValueTransformer; 
+        }, 
+        {
+            ACTIONS = {
+                deleteItem = id; 
+                expand = id; 
+                getInfo = id; 
+                myAction = id; 
+                newArchive = id; 
+                newFolder = id; 
+                setView = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = IconCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {CLASS = ImageTextCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {CLASS = ItemTransformer; LANGUAGE = ObjC; SUPERCLASS = NSValueTransformer; }, 
+        {
+            ACTIONS = {
+                addCustomPredicate = id; 
+                browse = id; 
+                deleteItem = id; 
+                doubleClick = id; 
+                editCustomPredicate = id; 
+                expand = id; 
+                newArchive = id; 
+                newArchiveFromSelection = id; 
+                removeCustomPredicate = id; 
+                reveal = id; 
+                verifyArchive = id; 
+            }; 
+            CLASS = MainWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                drawer = NSDrawer; 
+                infoSize = NSTextField; 
+                infoTabView = NSTabView; 
+                leftView = id; 
+                newArchivePanelAccessoryView = id; 
+                preview = Preview; 
+                querySpinner = NSProgressIndicator; 
+                removeSearchButton = NSButton; 
+                resultList = id; 
+                rightView = id; 
+                searchField = id; 
+                searchList = id; 
+                searchResults = id; 
+                searchView = id; 
+                searchesController = NSArrayController; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = NSValueTransformer; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {copyImage = id; copyThumbnail = id; extract = id; revealInArchive = id; }; 
+            CLASS = Preview; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {imageList = id; resultList = id; searchResults = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = PreviewTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = PreviewTask; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = ResultListTableDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mRealTarget = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = ResultListTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {cancelEditComment = id; editComment = id; okEditComment = id; setView = id; }; 
+            CLASS = StuffItDoc; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                browserView = id; 
+                commentTextView = id; 
+                commentWindow = id; 
+                iconView = id; 
+                listView = id; 
+                listViewTable = id; 
+                tabView = id; 
+                viewIdxView = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {
+                cancelEditComment = id; 
+                deleteItem = id; 
+                doubleAction = id; 
+                editComment = id; 
+                expand = id; 
+                getInfo = id; 
+                newFolder = id; 
+                okEditComment = id; 
+                setView = id; 
+            }; 
+            CLASS = StuffItDocWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                actionPopup = id; 
+                browser = id; 
+                browserView = id; 
+                commentTextView = id; 
+                commentWindow = id; 
+                iconView = id; 
+                listView = id; 
+                listViewTable = id; 
+                tabView = id; 
+                viewIdxView = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = TaskMaster; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = ToolbarMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = WhiteBoxView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = browserOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }
+    ); 
+    IBVersion = 1; 
+}

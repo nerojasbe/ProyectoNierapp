@@ -1,0 +1,92 @@
+{
+    IBClasses = (
+        {
+            CLASS = ArchiveItem; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_commentPreviewTabView" = NSTabView; 
+                "_infoWindow" = NSWindow; 
+                "_infoWindowController" = NSObjectController; 
+                "_labelPopUp" = NSPopUpButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = ImageTextCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {CLASS = KeyedTabView; LANGUAGE = ObjC; SUPERCLASS = NSTabView; }, 
+        {CLASS = MyDocument; LANGUAGE = ObjC; SUPERCLASS = NSDocument; }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {
+                cancelEditComment = id; 
+                deleteItem = id; 
+                editComment = id; 
+                expand = id; 
+                getInfo = id; 
+                newFolder = id; 
+                okEditComment = id; 
+                setView = id; 
+            }; 
+            CLASS = StuffItDoc; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                actionPopup = id; 
+                browser = id; 
+                browserView = id; 
+                commentTextView = id; 
+                commentWindow = id; 
+                iconView = id; 
+                listView = id; 
+                listViewTable = id; 
+                tabView = id; 
+                viewIdxView = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {CLASS = StuffItDocOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }, 
+        {
+            ACTIONS = {
+                addItems = id; 
+                cancelEditComment = id; 
+                deleteItem = id; 
+                doubleAction = id; 
+                editComment = id; 
+                extract = id; 
+                getInfo = id; 
+                newFolder = id; 
+                okEditComment = id; 
+                openInFinder = id; 
+                setView = id; 
+            }; 
+            CLASS = StuffItDocWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                actionPopup = id; 
+                browser = id; 
+                browserView = id; 
+                commentTextView = id; 
+                commentWindow = id; 
+                iconView = id; 
+                listView = id; 
+                listViewTable = id; 
+                tabView = id; 
+                viewIdxView = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = ToolbarMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = browserOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }, 
+        {CLASS = keyableOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }
+    ); 
+    IBVersion = 1; 
+}

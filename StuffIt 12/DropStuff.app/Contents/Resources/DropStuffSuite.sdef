@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="DropStuff Terminology">
+	<suite name="DropStuff Scripting" code="DStf" description="Commands and classes for DropStuff Scripting">
+		<enumeration name="formats" code="TYPE">
+			<enumerator name="StuffItX" code="SITX"/>
+			<enumerator name="StuffIt" code="SIT5"/>
+		</enumeration>
+		<enumeration name="platforms" code="PLAT">
+			<enumerator name="Macintosh" code="MAC "/>
+			<enumerator name="Windows" code="WIND"/>
+		</enumeration>
+		<enumeration name="encodings" code="ENCD">
+			<enumerator name="Binhex" code="BINH"/>
+			<enumerator name="UUCode" code="UUCD"/>
+			<enumerator name="none" code="NONE"/>
+		</enumeration>
+		<enumeration name="destinations" code="DEST">
+			<enumerator name="folder" code="FOLD"/>
+			<enumerator name="recordable media" code="DISC"/>
+			<enumerator name="ftp" code="FTP "/>
+		</enumeration>
+		<enumeration name="folder destinations" code="FDST">
+			<enumerator name="same folder as original" code="SAME"/>
+			<enumerator name="ask user" code="ASK "/>
+			<enumerator name="use specified folder" code="BRWS"/>
+		</enumeration>
+		<enumeration name="compression levels" code="CMPL">
+			<enumerator name="better" code="BETT"/>
+			<enumerator name="faster" code="FAST"/>
+			<enumerator name="custom" code="CUST"/>
+			<enumerator name="none" code="NONE"/>
+		</enumeration>
+		<enumeration name="tar compression methods" code="CMTH">
+			<enumerator name="bzip2" code="BZIP"/>
+			<enumerator name="gzip" code="GZIP"/>
+			<enumerator name="UNIX compress" code="UNIX"/>
+			<enumerator name="none" code="NONE"/>
+		</enumeration>
+		<enumeration name="jpeg compression levels" code="JLVL">
+			<enumerator name="better" code="JBTT"/>
+			<enumerator name="faster" code="JFST"/>
+			<enumerator name="none" code="JNNE"/>
+		</enumeration>
+		<!--
+		<classes>
+			<class name="application" code="capp" inherits="application">
+				<cocoa class="NSApplication"/>
+				<properties>
+					<property name="version checking" code="pVRS" type="boolean">
+						<cocoa key="versionCheck"/>
+					</property>
+					<property name="prevent recompression" code="pCMP" type="boolean">
+						<cocoa key="preventRecompression"/>
+					</property>
+					<property name="ignore special Finder files" code="pIGN" type="boolean">
+						<cocoa key="ignoreSpecial"/>
+					</property>
+					<property name="create individual archives" code="pIND" type="boolean">
+						<cocoa key="createIndividual"/>
+					</property>
+					<property name="delete originals" code="pDLT" type="boolean">
+						<cocoa key="deleteOriginals"/>
+					</property>
+					<property name="encoding" code="pECD" type="encodings">
+						<cocoa key="encoding"/>
+					</property>
+					<property name="simplify extension" code="pSMP" type="boolean">
+						<cocoa key="simplifyExtension"/>
+					</property>
+					<property name="destination" code="pDST" type="destinations">
+						<cocoa key="destination"/>
+					</property>
+					<property name="folder destination" code="pFDS" type="folder destinations">
+						<cocoa key="folderDestination"/>
+					</property>
+					<property name="temporary folder" code="pTMP" type="file">
+						<cocoa key="tempFolder"/>
+					</property>
+					<property name="ftp server" code="pSRV" type="text">
+						<cocoa key="ftpServer"/>
+					</property>
+					<property name="ftp path" code="pPTH" type="text">
+						<cocoa key="ftpPath"/>
+					</property>
+					<property name="ftp username" code="pUSR" type="text">
+						<cocoa key="ftpUsername"/>
+					</property>
+					<property name="ftp password" code="pFTP" type="text">
+						<cocoa key="ftpPassword"/>
+					</property>
+					<property name="StuffIt compression level" code="pSCM" type="compression levels">
+						<cocoa key="sitxCompressionLevel"/>
+					</property>
+					<property name="encrypt StuffItX archives" code="pSEN" type="boolean">
+						<cocoa key="sitxEncryption"/>
+					</property>
+					<property name="segment StuffItX archives" code="pSSA" type="integer">
+						<cocoa key="sitxSegment"/>
+					</property>
+					<property name="Zip compression level" code="pZPL" type="compression levels">
+						<cocoa key="zipCompressionLevel"/>
+					</property>
+					<property name="encrypt zip archives" code="pZPE" type="boolean">
+						<cocoa key="encryptZip"/>
+					</property>
+					<property name="encode zip archives" code="pZEC" type="boolean">
+						<cocoa key="zipPreserveMacintoshContents"/>
+					</property>
+					<property name="tar compression method" code="pTCM" type="tar compression methods">
+						<cocoa key="tarCompressionMethod"/>
+					</property>
+					<property name="tar compression level" code="pTCL" type="compression levels">
+						<cocoa key="tarCompressionLevel"/>
+					</property>
+					<property name="encode tar contents" code="pTEC" type="boolean">
+						<cocoa key="tarPreserveMacintoshContents"/>
+					</property>
+					<property name="preferences" code="pALL" type="dropstuff preferences">
+						<cocoa key="preferences"/>
+					</property>
+				</properties>
+			</class>
+			<class name="dropstuff preferences" code="PREF">
+				<properties>
+					<property name="version checking" code="VERS" type="boolean"/>
+				</properties>
+			</class>
+		</classes>
+-->
+		<command name="stuff" code="DStfDStf" description="compress a set of objects as a StuffIt archive">
+			<cocoa class="StuffCommand"/>
+			<direct-parameter description="item or list of items to be stuffed">
+				<type type="file" list="yes"/>
+			</direct-parameter>
+			<parameter name="format" code="TYPE" description="type of StuffIt archive to create (default: StuffItX)" type="formats" optional="yes">
+				<cocoa key="format"/>
+			</parameter>
+			<parameter name="to" code="DEST" description="the destination in which to create the archive" type="file" optional="yes">
+				<cocoa key="to"/>
+			</parameter>
+			<parameter name="delete originals" code="DELE" description="delete the original files after successful archive creation (default: false)" type="boolean" optional="yes">
+				<cocoa key="delete originals"/>
+			</parameter>
+			<parameter name="individually" code="INDV" description="archive each file as an individual archive (default: false)" type="boolean" optional="yes">
+				<cocoa key="individually"/>
+			</parameter>
+			<parameter name="dont recompress" code="NORE" description="do not compress files that are already compressed (default: true)" type="boolean" optional="yes">
+				<cocoa key="dont recompress"/>
+			</parameter>
+			<parameter name="password" code="PASS" description="a password to use when encrypting" type="text" optional="yes">
+				<cocoa key="password"/>
+			</parameter>
+			<parameter name="ignore desktop files" code="IGNO" description="ignore Finder files such as .DS_Store (default: true)" type="boolean" optional="yes">
+				<cocoa key="ignore desktop files"/>
+			</parameter>
+			<parameter name="binhexing" code="ENCO" description="encode the archive as a BinHex file (default: false)" type="boolean" optional="yes">
+				<cocoa key="binhexing"/>
+			</parameter>
+			<parameter name="adjust extension" code="EEXT" description="remove the compound extension after BinHexing (default: false)" type="boolean" optional="yes">
+				<cocoa key="adjust extension"/>
+			</parameter>
+			<parameter name="segment size" code="SSIZ" description="size of segments in bytes to create (default: 0 or no segments). Only supported by StuffIt X archives." type="integer" optional="yes">
+				<cocoa key="segment size"/>
+			</parameter>
+			<parameter name="jpeg compression level" code="JLVL" description="compress jpeg files: (default: better). Only supported by StuffIt X." type="compression levels" optional="yes">
+				<cocoa key="compress jpeg"/>
+			</parameter>
+			<parameter name="include thumbnails" code="THMB" description="include jpeg thumbnails: (default: true). Only supported by StuffIt X." type="boolean" optional="yes">
+				<cocoa key="include thumbnails"/>
+			</parameter>
+			<result description="the created archive">
+				<type type="file" list="yes"/>
+			</result>
+		</command>
+		<command name="zip" code="DStfZIP " description="compress a set of objects as a Zip archive">
+			<cocoa class="ZipCommand"/>
+			<direct-parameter description="object (or list of objects) to compress">
+				<type type="file" list="yes"/>
+			</direct-parameter>
+			<parameter name="to" code="DEST" description="the destination to create archive in" type="file" optional="yes">
+				<cocoa key="to"/>
+			</parameter>
+			<parameter name="compression level" code="CMPL" type="compression levels" optional="yes">
+				<cocoa key="compression level"/>
+			</parameter>
+			<parameter name="password" code="PASS" type="text" optional="yes" description="a password to use when encrypting">
+				<cocoa key="password"/>
+			</parameter>
+			<parameter name="preserve macintosh content" code="PSRV" type="boolean" optional="yes" description="keep Macintosh specific data when compressing (default: true)">
+				<cocoa key="preserve macintosh content"/>
+			</parameter>
+			<parameter name="ignore desktop files" code="IGNO" type="boolean" optional="yes" description="ignore invisible Finder files, eg. .DS_Store (default: true)">
+				<cocoa key="ignore desktop files"/>
+			</parameter>
+			<parameter name="encode" code="ENCD" type="encodings" optional="yes" description="optionally encode the archive after it is created (default: none)">
+				<cocoa key="encode"/>
+			</parameter>
+			<parameter name="adjust extension" code="EEXT" type="boolean" optional="yes" description="simplify extension after the archive has been created and encoded (default: false)">
+				<cocoa key="adjust extension"/>
+			</parameter>
+			<result description="the archive">
+				<type type="file" list="yes"/>
+			</result>
+		</command>
+		<command name="tar" code="DStfTAR " description="compress a set of objects as a Tar archive">
+			<cocoa class="TarCommand"/>
+			<direct-parameter description="object (or list of objects) to compress">
+				<type type="file" list="yes"/>
+			</direct-parameter>
+			<parameter name="to" code="DEST" description="the destination to create archive in" type="file" optional="yes">
+				<cocoa key="to"/>
+			</parameter>
+			<parameter name="compression method" code="CMTH" type="tar compression methods" optional="yes" description="optional compression to apply to the new archive (default: none)">
+				<cocoa key="compression method"/>
+			</parameter>
+			<parameter name="compression level" code="CMPL" type="compression levels" optional="yes" description="level of compression to when using compression (default: better)">
+				<cocoa key="compression level"/>
+			</parameter>
+			<parameter name="preserve macintosh content" code="PSRV" type="boolean" optional="yes" description="keep Macintosh specific data when compressing (default: true)">
+				<cocoa key="preserve macintosh content"/>
+			</parameter>
+			<parameter name="ignore desktop files" code="IGNO" type="boolean" optional="yes" description="ignore invisible Finder files, eg. .DS_Store (default: true)">
+				<cocoa key="ignore desktop files"/>
+			</parameter>
+			<parameter name="encode" code="ENCD" type="encodings" optional="yes" description="optionally encode the archive after it is created (default: none)">
+				<cocoa key="encode"/>
+			</parameter>
+			<parameter name="adjust extension" code="EEXT" type="boolean" optional="yes" description="simplify extension after the archive has been created and encoded (default: false)">
+				<cocoa key="adjust extension"/>
+			</parameter>
+			<result description="the archive">
+				<type type="file" list="yes"/>
+			</result>
+		</command>
+	</suite>
+</dictionary>

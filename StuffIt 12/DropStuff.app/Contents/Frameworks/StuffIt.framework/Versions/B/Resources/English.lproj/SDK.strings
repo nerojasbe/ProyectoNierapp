@@ -1,0 +1,22 @@
+" Folder" = " Folder";
+"Comments for %@" = "Comments for %@";
+
+" old" = " old";
+" copy" = " copy";
+
+"Archive" = "Archive";
+
+#UI strings (need to be moved)
+"name prefix" = "name prefix";
+" has requested a return receipt for this archive.  Contact information and instructions appear below." = " has requested a return receipt for this archive.  Contact information and instructions appear below.";
+"A user" = "A user";
+"Return Receipt Request" = "Return Receipt Request";
+
+"Select a destination for %@:" = "Select a destination for %@:";
+"Select a location for the segment %@:" = "Select a location for the segment %@:";
+
+"Select a destination for the converted archive:" = "Select a destination for the converted archive:";
+
+"Select a destination for expansion:" = "Select a destination for expansion:";
+
+"The item %@ already exists in this location." = "The item %@ already exists in this location.";

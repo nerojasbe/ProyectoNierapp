@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {
+            CLASS = FileMappingsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsView = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {assignAllToExpander = id; assignToDeluxe = id; assignToExpander = id; }; 
+            CLASS = FormatTableController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {arrayController = id; tableView = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

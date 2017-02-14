@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {changeMagnitude = id; done = id; }; 
+            CLASS = CustomSegmentController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {magSelector = id; magnitude = id; segmentSize = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = IntegerTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,61 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                cancelEditComment = id; 
+                deleteItem = id; 
+                editComment = id; 
+                expand = id; 
+                getInfo = id; 
+                newFolder = id; 
+                okEditComment = id; 
+                setView = id; 
+            }; 
+            CLASS = StuffItDoc; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                actionPopup = id; 
+                browser = id; 
+                browserView = id; 
+                commentTextView = id; 
+                commentWindow = id; 
+                iconView = id; 
+                listView = id; 
+                listViewTable = id; 
+                tabView = id; 
+                viewIdxView = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {
+                cancelEditComment = id; 
+                deleteItem = id; 
+                doubleAction = id; 
+                editComment = id; 
+                expand = id; 
+                getInfo = id; 
+                newFolder = id; 
+                okEditComment = id; 
+                setView = id; 
+            }; 
+            CLASS = StuffItDocWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                actionPopup = id; 
+                browser = id; 
+                browserView = id; 
+                commentTextView = id; 
+                commentWindow = id; 
+                iconView = id; 
+                listView = id; 
+                listViewTable = id; 
+                tabView = id; 
+                viewIdxView = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

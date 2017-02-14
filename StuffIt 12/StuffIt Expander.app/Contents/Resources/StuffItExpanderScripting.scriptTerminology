@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Commands</key>
+	<dict>
+		<key>Expand</key>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>contine to expand</key>
+				<dict>
+					<key>Description</key>
+					<string>continue to expand archives (default is false)</string>
+					<key>Name</key>
+					<string>continue to expand</string>
+				</dict>
+				<key>create enclosing folder</key>
+				<dict>
+					<key>Description</key>
+					<string>create enclosing folder for expansion results (default is smart)</string>
+					<key>Name</key>
+					<string>create enclosing folder</string>
+				</dict>
+				<key>delete originals</key>
+				<dict>
+					<key>Description</key>
+					<string>after successful expansion, the archives will be deleted (default is false)</string>
+					<key>Name</key>
+					<string>delete originals</string>
+				</dict>
+				<key>password</key>
+				<dict>
+					<key>Description</key>
+					<string>optional password to expand encrypted archives</string>
+					<key>Name</key>
+					<string>password</string>
+				</dict>
+				<key>to</key>
+				<dict>
+					<key>Description</key>
+					<string>optional destination to expand into</string>
+					<key>Name</key>
+					<string>to</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>Expand archives</string>
+			<key>Name</key>
+			<string>expand</string>
+			<key>UnnamedArgument</key>
+			<dict>
+				<key>Description</key>
+				<string>item or list of archives to be expanded</string>
+			</dict>
+		</dict>
+		<key>Install</key>
+		<dict>
+			<key>Description</key>
+			<string>Install the StuffIt Engine</string>
+			<key>Name</key>
+			<string>install</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Commands and classes for StuffIt Expander Scripting</string>
+	<key>Enumerations</key>
+	<dict>
+		<key>FolderCreation</key>
+		<dict>
+			<key>Always</key>
+			<dict>
+				<key>Name</key>
+				<string>always</string>
+			</dict>
+			<key>Never</key>
+			<dict>
+				<key>Name</key>
+				<string>never</string>
+			</dict>
+			<key>Smart</key>
+			<dict>
+				<key>Name</key>
+				<string>smart</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Name</key>
+	<string>StuffIt Expander Scripting</string>
+</dict>
+</plist>

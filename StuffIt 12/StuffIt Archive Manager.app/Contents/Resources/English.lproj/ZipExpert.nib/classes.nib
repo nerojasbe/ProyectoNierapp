@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {compressionMethod = id; done = id; }; 
+            CLASS = ZipExpertController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {compLevel = id; methodMenu = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

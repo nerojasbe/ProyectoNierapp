@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {destinationSelection = id; }; 
+            CLASS = DestinationPrefsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {destMenu = id; prefsView = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MyDateFormatter; LANGUAGE = ObjC; SUPERCLASS = NSDateFormatter; }, 
+        {CLASS = ScheduledTask; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = SchedulerWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dateFormatter = MyDateFormatter; 
+                taskArray = NSArrayController; 
+                taskTable = NSTableView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = ToolbarMediator; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = myDateFormatter; LANGUAGE = ObjC; SUPERCLASS = NSDateFormatter; }
+    ); 
+    IBVersion = 1; 
+}

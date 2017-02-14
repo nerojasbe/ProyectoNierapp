@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = TMBasicViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cancelButton = NSView; 
+                iconView = NSView; 
+                nameText = NSView; 
+                progressBar = NSView; 
+                stateText = NSView; 
+                taskInfoController = NSObjectController; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = TMViewOwner; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {view = NSView; viewController = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
